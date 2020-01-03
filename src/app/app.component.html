@@ -1,0 +1,16 @@
+
+<div id="nav-bar">
+<nav>
+    <a routerLink='/about' routerLinkActive='active'>about</a>
+    <a routerLink='/projects' routerLinkActive='active'>projects</a>
+  </nav>
+</div>
+<div id="page">
+  <hello name="{{ name }}"></hello>
+  
+  
+</div>
+<main [@routeAnimations]="prepareRoute(outlet)" class="content">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
+
