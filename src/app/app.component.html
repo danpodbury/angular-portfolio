@@ -1,14 +1,14 @@
-
 <div id="nav-bar">
+  <a routerLink='/' routerLinkActive='active'>
+  <img id="logo" src="https://danpodbury.files.wordpress.com/2018/11/cropped-stolas-illustration-crop2.jpg">
+  </a>
 <nav>
     <a routerLink='/about' routerLinkActive='active'>about</a>
     <a routerLink='/projects' routerLinkActive='active'>projects</a>
   </nav>
 </div>
 <div id="page">
-  <hello name="{{ name }}"></hello>
-  
-  
+  <!--hello name="{{ name }}"></hello>-->
 </div>
 <main [@routeAnimations]="prepareRoute(outlet)" class="content">
   <router-outlet #outlet="outlet"></router-outlet>
